@@ -1,0 +1,35 @@
+.footer {
+  background-color: #6278F7;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 200px;
+  background-image: url('../../../public/images/fundo.png');
+}
+.footer ul {
+  list-style-type: none;
+}
+.footer .social-logos {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.footer .social-logos img {
+  width: 20px;
+  height: 20px;
+}
+
+.footer .footer-logo img {
+  max-width: 200px;
+}
+
+.footer .copy {
+  color: #FFFFFF;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: right;
+}
