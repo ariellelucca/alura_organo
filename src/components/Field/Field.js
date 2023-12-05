@@ -1,5 +1,4 @@
 import './Field.css';
-import {useState} from 'react';
 
 export const Field = ({ type = 'text', label, placeholder, valor, onModified, req = false }) => {
   const placeholderMod = `${placeholder}...`;

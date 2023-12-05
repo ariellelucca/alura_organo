@@ -4,9 +4,13 @@ import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
 
 
 export const Collaborator = ({ nome, id, fav, imagem, cargo, corFundo, onRemove, toggleFav }) => {
-  console.log(fav);
   function togFav() {
     toggleFav(id);
+  }
+
+  const propsFav = {
+    size: 25,
+    onClick: togFav
   }
   return (<div className='collaborator'>
     <IoMdCloseCircle 
@@ -21,7 +25,7 @@ export const Collaborator = ({ nome, id, fav, imagem, cargo, corFundo, onRemove,
       <h4>{nome}</h4>
       <h5>{cargo}</h5>
       <div className='fav'>
-        {fav ? <AiFillHeart size={25} onClick={togFav} /> : <AiOutlineHeart size={25} onClick={togFav} />}
+        {fav ? <AiFillHeart {...propsFav} color="red" /> : <AiOutlineHeart {...propsFav} />}
       </div>
     </div>
   </div>)
